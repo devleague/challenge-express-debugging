@@ -8,7 +8,7 @@ const about = require('./routes/about/index'); // rename this to router
 const contact = require('./routes/contact/index'); // rename this to router
 
 app.get('/', (req, res) => {
-  res.send('smoke test');
+  res.redirect('/home');
 });
 
 app.use('/home', home);
